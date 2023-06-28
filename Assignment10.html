@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator Design</title>
+        <style>
+            .calculator-container{
+                background-color: grey;
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+                border-radius: 20px;
+                padding: 10px;
+                padding-bottom: 40px;
+            }
+            .heading{
+                color: white;
+                text-align: right;
+                margin-right: 20px;
+            }
+            .calculator-screen{
+                font-size: 24px;
+                width:280px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                padding: 4px;
+                background-color:lightgreen;
+                margin-bottom: 20px;
+            
+            }
+            .button-row{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 15px;
+            }
+            .cal-button{
+                font-size: 30px;
+                height: 40px;
+                width: 40px;
+                border-radius: 9px;
+                cursor: pointer;
+            }
+            .cal-button:hover{
+                font-size: 33px;
+                box-shadow: 0 0 1px 0.5px white;
+                transition: 1s;
+            }
+            .bg-yellow{
+                background-color: yellowgreen;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="calculator-container">
+            <p class="heading">Casio</p>
+            <input type="text" class="calculator-screen"/>
+            <div class="button-row">
+                <button class="cal-button">7</button>
+                <button class="cal-button">8</button>
+                <button class="cal-button">9</button>
+                <button class="cal-button bg-yellow">/</button>
+            </div>
+            <div class="button-row">
+                <button class="cal-button">4</button>
+                <button class="cal-button">5</button>
+                <button class="cal-button">6</button>
+                <button class="cal-button bg-yellow">*</button>
+            </div>
+            <div class="button-row">
+                <button class="cal-button">1</button>
+                <button class="cal-button">2</button>
+                <button class="cal-button">3</button>
+                <button class="cal-button bg-yellow">-</button>
+            </div>
+            <div class="button-row">
+                <button class="cal-button">0</button>
+                <button class="cal-button">.</button>
+                <button class="cal-button">=</button>
+                <button class="cal-button bg-yellow">+</button>
+            </div>
+        
+        </div>
+    </body>
+</html>
